@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Genetics Quiz</title>
+
+    <style>
+        body{
+            margin: 0;
+            color: white;
+            overflow: hidden;
+        }
+
+        video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content{
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    
+<h2>Genetics Quiz</h2>
+  <p>Time left: <span id="time">45</span>s</p>
+
+  <ol>
+    <li><p>What is a genotype?</p>
+      <input type="radio" name="q1" value="a"> Observable trait<br>
+      <input type="radio" name="q1" value="b"> Genetic code you carry<br>
+      <input type="radio" name="q1" value="c"> Environment effect
+    </li>
+
+    <li><p>AS + AS parents = chance of SS?</p>
+      <input type="radio" name="q2" value="a"> 25%<br>
+      <input type="radio" name="q2" value="b"> 50%<br>
+      <input type="radio" name="q2" value="c"> 100%
+    </li>
+
+    <li><p>Phenotype = Genotype + ?</p>
+      <input type="radio" name="q3" value="a"> Mutation<br>
+      <input type="radio" name="q3" value="b"> Environment<br>
+      <input type="radio" name="q3" value="c"> Chromosomes
+    </li>
+  </ol>
+
+    <video autoplay muted loop>
+        <source src="bg-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h1>Genetics Quiz</h1>
+        <button id="submitBtn">Submit</button>
+    </div>
+
+</body>
+</html>
